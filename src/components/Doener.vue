@@ -1,6 +1,6 @@
 <template>
   <div class="doener">
-
+    {{ doener.name }}
   </div>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     name: 'Doener',
     props: {
-
+      doener: { type: Object, required: true, }
     }
   }
 </script>
