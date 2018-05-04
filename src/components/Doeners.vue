@@ -10,6 +10,8 @@
 </template>
 
 <script>
+  import axios from 'axios';
+
   import Doener from './Doener.vue';
 
   export default {
@@ -19,16 +21,17 @@
     },
     data() {
       return {
-        doeners: [
-          {
-            id: 1,
-            name: 'Doener 1',
-          }, {
-            id: 2,
-            name: 'Doener 2',
-          },
-        ]
+        doeners: [],
       }
+    },
+    created() {
+      axios.get(`doeners`)
+        .then(({ data }) => {
+          this.doeners = data
+        })
+        .catch(e => {
+          console.error(e);
+        })
     }
   }
 </script>
