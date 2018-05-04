@@ -20,8 +20,13 @@
     data() {
       return {
         doeners: [
-          { id: 1, name: 'Doener 1', },
-          { id: 2, name: 'Doener 2', },
+          {
+            id: 1,
+            name: 'Doener 1',
+          }, {
+            id: 2,
+            name: 'Doener 2',
+          },
         ]
       }
     }

@@ -8,7 +8,10 @@
   export default {
     name: 'Doener',
     props: {
-      doener: { type: Object, required: true, }
+      doener: {
+        type: Object,
+        required: true,
+      }
     }
   }
 </script>

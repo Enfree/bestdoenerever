@@ -1,12 +1,14 @@
 <template>
   <div class="filters">
     Filters
-    <rating></rating>
+    <Rating
+      :max="5"
+    />
   </div>
 </template>
 
 <script>
-  import rating from './Rating.vue';
+  import Rating from './Rating.vue';
 
   export default {
     name: 'Filters',
@@ -14,7 +16,7 @@
 
     },
     components: {
-      rating,
+      Rating,
     },
   }
 </script>
