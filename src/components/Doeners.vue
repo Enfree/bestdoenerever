@@ -3,6 +3,7 @@
     Doeners
     <Doener
       v-for="(doener, index) in doeners"
+      :key="index"
       :doener="doener"
     />
   </div>
